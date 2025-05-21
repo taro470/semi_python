@@ -3,7 +3,7 @@ import datetime
 import csv
 import os
 
-CSV_FILE = "/home/hogehoge/system_log.csv"
+CSV_FILE = "/home/ryutaro/semi_python/system_log.csv"
 
 def collect_data():
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")

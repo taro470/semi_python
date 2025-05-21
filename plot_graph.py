@@ -1,8 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-CSV_FILE = "/home/ryutaro/system_log.csv"
-IMG_FILE = "/home/ryutaro/system_graph.png"
+CSV_FILE = "/home/hogehoge/system_log.csv"
+IMG_FILE = "/home/hogehoge/system_graph.png"
 
 def plot_graph():
     df = pd.read_csv(CSV_FILE)

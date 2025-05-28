@@ -1,5 +1,6 @@
-import pandas as pd
-import matplotlib.pyplot as plt
+import pandas as pd                # ライブラリのインポート
+import matplotlib.pyplot as plt    # ライブラリのインポート
+import matplotlib.dates as mdates
 
 CSV_FILE = "/home/ryutaro/semi_python/system_log.csv"
 IMG_FILE = "/home/ryutaro/semi_python/system_graph.png"
@@ -21,6 +22,9 @@ def plot_graph():
     plt.xticks(rotation=45)
     plt.savefig(IMG_FILE)
     plt.close()
+
+    # x軸を秒を除いたフォーマットに設定
+    plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M'))
 
 if __name__ == "__main__":
     plot_graph()

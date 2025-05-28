@@ -1,7 +1,7 @@
-*1* pandas as pd                
-*1* matplotlib.pyplot as plt    
-*1* matplotlib.dates as mdates  
- 
+*1* pandas as pd
+*1* matplotlib.pyplot as plt
+*1* matplotlib.dates as mdates
+
 CSV_FILE = "/home/*2*/semi_python/system_log.csv"
 IMG_FILE = "/home/*2*/semi_python/system_graph.png"
 
@@ -24,7 +24,6 @@ def plot_graph():
     plt.close()
 
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M'))
-
 
 if __name__ == "__main__":
     *6*
